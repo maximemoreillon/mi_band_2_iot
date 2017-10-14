@@ -36,18 +36,6 @@
 		</Event>
 	</Profile>
 
-	<Profile sr="prof20" ve="2">
-		<cdate>1507351626885</cdate>
-		<edate>1507354727918</edate>
-		<id>20</id>
-		<mid0>21</mid0>
-		<mid1>22</mid1>
-		<State sr="con0" ve="2">
-			<code>10</code>
-			<Int sr="arg0" val="0"/>
-		</State>
-	</Profile>
-
 	<Profile sr="prof4" ve="2">
 		<cdate>1505479666991</cdate>
 		<edate>1505989563785</edate>
@@ -134,7 +122,40 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task12">
+		<cdate>1505483423505</cdate>
+		<edate>1506030264431</edate>
+		<id>12</id>
+		<nme>Clear Variable</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>549</code>
+			<Str sr="arg0" ve="3"/>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+	</Task>
 
+	<Task sr="task14">
+		<cdate>1505981462250</cdate>
+		<edate>1506031629995</edate>
+		<id>14</id>
+		<nme>Mi Band 2 Connect</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">mb2fb_connect</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
 	<Task sr="task15">
 		<cdate>1505640420828</cdate>
 		<edate>1506031595452</edate>
@@ -155,7 +176,6 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
-
 	<Task sr="task16">
 		<cdate>1505981772630</cdate>
 		<edate>1506070011541</edate>
@@ -225,7 +245,7 @@
 				<Vals sr="val">
 					<ClientID>tasker</ClientID>
 					<ClientID-type>java.lang.String</ClientID-type>
-					<Password>password</Password>
+					<Password>your_password</Password>
 					<Password-type>java.lang.String</Password-type>
 					<Payload>TOGGLE</Payload>
 					<Payload-type>java.lang.String</Payload-type>
@@ -237,13 +257,13 @@
 					<Retain-type>java.lang.Boolean</Retain-type>
 					<SSL>false</SSL>
 					<SSL-type>java.lang.Boolean</SSL-type>
-					<Server>server_url</Server>
+					<Server>your_server_url</Server>
 					<Server-type>java.lang.String</Server-type>
 					<Topic>ac/living/command</Topic>
 					<Topic-type>java.lang.String</Topic-type>
-					<Username>username</Username>
+					<Username>your_username</Username>
 					<Username-type>java.lang.String</Username-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; ac/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>your_server_url:1883 =&gt; ac/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -256,7 +276,6 @@
 			<Int sr="arg3" val="10"/>
 		</Action>
 	</Task>
-
 	<Task sr="task25">
 		<cdate>1507464140078</cdate>
 		<edate>1507464153251</edate>
@@ -268,7 +287,7 @@
 				<Vals sr="val">
 					<ClientID>tasker</ClientID>
 					<ClientID-type>java.lang.String</ClientID-type>
-					<Password>password</Password>
+					<Password>your_password</Password>
 					<Password-type>java.lang.String</Password-type>
 					<Payload>TOGGLE</Payload>
 					<Payload-type>java.lang.String</Payload-type>
@@ -280,13 +299,13 @@
 					<Retain-type>java.lang.Boolean</Retain-type>
 					<SSL>false</SSL>
 					<SSL-type>java.lang.Boolean</SSL-type>
-					<Server>server_url</Server>
+					<Server>your_server_url</Server>
 					<Server-type>java.lang.String</Server-type>
 					<Topic>heater/living/command</Topic>
 					<Topic-type>java.lang.String</Topic-type>
-					<Username>username</Username>
+					<Username>your_username</Username>
 					<Username-type>java.lang.String</Username-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; heater/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>your_server_url:1883 =&gt; heater/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -299,7 +318,6 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
-
 	<Task sr="task3">
 		<cdate>1505479395908</cdate>
 		<edate>1507464287777</edate>
@@ -501,7 +519,6 @@
 			</ConditionList>
 		</Action>
 	</Task>
-
 	<Task sr="task5">
 		<cdate>1505480635729</cdate>
 		<edate>1507353334703</edate>
@@ -513,7 +530,7 @@
 				<Vals sr="val">
 					<ClientID>tasker</ClientID>
 					<ClientID-type>java.lang.String</ClientID-type>
-					<Password>password</Password>
+					<Password>your_password</Password>
 					<Password-type>java.lang.String</Password-type>
 					<Payload>TOGGLE</Payload>
 					<Payload-type>java.lang.String</Payload-type>
@@ -525,13 +542,13 @@
 					<Retain-type>java.lang.Boolean</Retain-type>
 					<SSL>false</SSL>
 					<SSL-type>java.lang.Boolean</SSL-type>
-					<Server>server_url</Server>
+					<Server>your_server_url</Server>
 					<Server-type>java.lang.String</Server-type>
 					<Topic>light/bedroom/command</Topic>
 					<Topic-type>java.lang.String</Topic-type>
-					<Username>username</Username>
+					<Username>your_username</Username>
 					<Username-type>java.lang.String</Username-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; light/bedroom/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>your_server_url:1883 =&gt; light/bedroom/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -544,7 +561,6 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
-
 	<Task sr="task6">
 		<cdate>1505482258132</cdate>
 		<edate>1507464339768</edate>
@@ -626,7 +642,6 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
-
 	<Task sr="task7">
 		<cdate>1505482316521</cdate>
 		<edate>1507464123642</edate>
@@ -1203,7 +1218,7 @@
 				<Vals sr="val">
 					<ClientID>Tasker</ClientID>
 					<ClientID-type>java.lang.String</ClientID-type>
-					<Password>password</Password>
+					<Password>your_password</Password>
 					<Password-type>java.lang.String</Password-type>
 					<Payload>TOGGLE</Payload>
 					<Payload-type>java.lang.String</Payload-type>
@@ -1215,13 +1230,13 @@
 					<Retain-type>java.lang.Boolean</Retain-type>
 					<SSL>false</SSL>
 					<SSL-type>java.lang.Boolean</SSL-type>
-					<Server>server_url</Server>
+					<Server>your_server_url</Server>
 					<Server-type>java.lang.String</Server-type>
 					<Topic>lock/command</Topic>
 					<Topic-type>java.lang.String</Topic-type>
-					<Username>username</Username>
+					<Username>your_username</Username>
 					<Username-type>java.lang.String</Username-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; lock/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>your_server_url:1883 =&gt; lock/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
@@ -1234,7 +1249,6 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
-	
 	<Task sr="task9">
 		<cdate>1505292600120</cdate>
 		<edate>1506260250497</edate>
@@ -1247,7 +1261,7 @@
 				<Vals sr="val">
 					<ClientID>tasker</ClientID>
 					<ClientID-type>java.lang.String</ClientID-type>
-					<Password>password</Password>
+					<Password>your_password</Password>
 					<Password-type>java.lang.String</Password-type>
 					<Payload>TOGGLE</Payload>
 					<Payload-type>java.lang.String</Payload-type>
@@ -1259,13 +1273,13 @@
 					<Retain-type>java.lang.Boolean</Retain-type>
 					<SSL>false</SSL>
 					<SSL-type>java.lang.Boolean</SSL-type>
-					<Server>server_url</Server>
+					<Server>your_server_url</Server>
 					<Server-type>java.lang.String</Server-type>
 					<Topic>light/living/command</Topic>
 					<Topic-type>java.lang.String</Topic-type>
-					<Username>username</Username>
+					<Username>your_username</Username>
 					<Username-type>java.lang.String</Username-type>
-					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; light/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB>your_server_url:1883 =&gt; light/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
 					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
