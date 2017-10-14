@@ -1,0 +1,1281 @@
+<TaskerData sr="" dvi="1" tv="5.0u6m">
+
+	<Profile sr="prof10" ve="2">
+		<cdate>1505427216364</cdate>
+		<edate>1505982681510</edate>
+		<flags>2</flags>
+		<id>10</id>
+		<mid0>6</mid0>
+		<nme>Mi Band 2 triple tap</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">mb2_tap3</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+
+	<Profile sr="prof2" ve="2">
+		<cdate>1505479228696</cdate>
+		<edate>1505989563318</edate>
+		<flags>2</flags>
+		<id>2</id>
+		<mid0>11</mid0>
+		<nme>Mi Band 2 single tap</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">mb2_tap1</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+
+	<Profile sr="prof20" ve="2">
+		<cdate>1507351626885</cdate>
+		<edate>1507354727918</edate>
+		<id>20</id>
+		<mid0>21</mid0>
+		<mid1>22</mid1>
+		<State sr="con0" ve="2">
+			<code>10</code>
+			<Int sr="arg0" val="0"/>
+		</State>
+	</Profile>
+
+	<Profile sr="prof4" ve="2">
+		<cdate>1505479666991</cdate>
+		<edate>1505989563785</edate>
+		<flags>2</flags>
+		<id>4</id>
+		<mid0>16</mid0>
+		<nme>Mi Band 2 double tap</nme>
+		<Event sr="con0" ve="2">
+			<code>599</code>
+			<pri>0</pri>
+			<Str sr="arg0" ve="3">mb2_tap2</Str>
+			<Int sr="arg1" val="0"/>
+			<Int sr="arg2" val="0"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+		</Event>
+	</Profile>
+
+	<Project sr="proj0" ve="2">
+		<cdate>1505213919728</cdate>
+		<mdate>1507464153251</mdate>
+		<name>Base</name>
+		<pids>2,4,10,20</pids>
+		<tids>8,9,5,6,11,16,7,3,15,14,12,18,13,21,22,24,25</tids>
+		<Img sr="icon" ve="2">
+			<nme>mw_action_home</nme>
+		</Img>
+	</Project>
+
+	<Task sr="task11">
+		<cdate>1505475519475</cdate>
+		<edate>1506074144338</edate>
+		<id>11</id>
+		<nme>Mi Band 2 Menu cycle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMEMS - %MenuEnabledTime</lhs>
+					<op>6</op>
+					<rhs>%ConfirmDelay</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>888</code>
+			<Str sr="arg0" ve="3">%MenuIndex</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuIndex</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>7</op>
+					<rhs>%MenuItemCount</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuEnabledTime</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Mi Band 2 Show current menu</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task15">
+		<cdate>1505640420828</cdate>
+		<edate>1506031595452</edate>
+		<id>15</id>
+		<nme>Mi Band 2 Disconnect</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>877</code>
+			<Str sr="arg0" ve="3">mb2fb_disconnect</Str>
+			<Int sr="arg1" val="0"/>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Str sr="arg5" ve="3"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Str sr="arg8" ve="3"/>
+			<Int sr="arg9" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task16">
+		<cdate>1505981772630</cdate>
+		<edate>1506070011541</edate>
+		<id>16</id>
+		<nme>Mi Band 2 Menu cycle reverse</nme>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMEMS - %MenuEnabledTime</lhs>
+					<op>6</op>
+					<rhs>%ConfirmDelay</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>890</code>
+			<Str sr="arg0" ve="3">%MenuIndex</Str>
+			<Int sr="arg1" val="1"/>
+			<Int sr="arg2" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuIndex</Str>
+			<Str sr="arg1" ve="3">%MenuItemCount</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>6</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuEnabledTime</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Mi Band 2 Show current menu</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task24">
+		<cdate>1507463825892</cdate>
+		<edate>1507464130733</edate>
+		<id>24</id>
+		<nme>MQTT AC toggle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>163134030</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ClientID>tasker</ClientID>
+					<ClientID-type>java.lang.String</ClientID-type>
+					<Password>password</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Payload>TOGGLE</Payload>
+					<Payload-type>java.lang.String</Payload-type>
+					<Port>1883</Port>
+					<Port-type>java.lang.String</Port-type>
+					<QoS>2131296278</QoS>
+					<QoS-type>java.lang.Integer</QoS-type>
+					<Retain>false</Retain>
+					<Retain-type>java.lang.Boolean</Retain-type>
+					<SSL>false</SSL>
+					<SSL-type>java.lang.Boolean</SSL-type>
+					<Server>server_url</Server>
+					<Server-type>java.lang.String</Server-type>
+					<Topic>ac/living/command</Topic>
+					<Topic-type>java.lang.String</Topic-type>
+					<Username>username</Username>
+					<Username-type>java.lang.String</Username-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; ac/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">net.nosybore.mqttpublishplugin</Str>
+			<Str sr="arg2" ve="3">net.nosybore.mqttpublishplugin.EditActivity</Str>
+			<Int sr="arg3" val="10"/>
+		</Action>
+	</Task>
+
+	<Task sr="task25">
+		<cdate>1507464140078</cdate>
+		<edate>1507464153251</edate>
+		<id>25</id>
+		<nme>MQTT Heater toggle</nme>
+		<Action sr="act0" ve="7">
+			<code>163134030</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ClientID>tasker</ClientID>
+					<ClientID-type>java.lang.String</ClientID-type>
+					<Password>password</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Payload>TOGGLE</Payload>
+					<Payload-type>java.lang.String</Payload-type>
+					<Port>1883</Port>
+					<Port-type>java.lang.String</Port-type>
+					<QoS>2131296278</QoS>
+					<QoS-type>java.lang.Integer</QoS-type>
+					<Retain>false</Retain>
+					<Retain-type>java.lang.Boolean</Retain-type>
+					<SSL>false</SSL>
+					<SSL-type>java.lang.Boolean</SSL-type>
+					<Server>server_url</Server>
+					<Server-type>java.lang.String</Server-type>
+					<Topic>heater/living/command</Topic>
+					<Topic-type>java.lang.String</Topic-type>
+					<Username>username</Username>
+					<Username-type>java.lang.String</Username-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; heater/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">net.nosybore.mqttpublishplugin</Str>
+			<Str sr="arg2" ve="3">net.nosybore.mqttpublishplugin.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task3">
+		<cdate>1505479395908</cdate>
+		<edate>1507464287777</edate>
+		<id>3</id>
+		<nme>Mi Band 2 Action confirm</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMEMS - %MenuEnabledTime</lhs>
+					<op>6</op>
+					<rhs>%ConfirmDelay</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuEnabledTime</Str>
+			<Str sr="arg1" ve="3">%TIMEMS - %ConfirmDelay</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-5570816</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1,OK)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1,OK)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>15</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>0</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>&lt;null&gt;</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">MQTT Living room light toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">MQTT Bedroom light toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">MQTT Lock toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">MQTT AC toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">MQTT Heater toggle</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Mi Band 2 Disconnect</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>5</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+
+	<Task sr="task5">
+		<cdate>1505480635729</cdate>
+		<edate>1507353334703</edate>
+		<id>5</id>
+		<nme>MQTT Bedroom light toggle</nme>
+		<Action sr="act0" ve="7">
+			<code>163134030</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ClientID>tasker</ClientID>
+					<ClientID-type>java.lang.String</ClientID-type>
+					<Password>password</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Payload>TOGGLE</Payload>
+					<Payload-type>java.lang.String</Payload-type>
+					<Port>1883</Port>
+					<Port-type>java.lang.String</Port-type>
+					<QoS>2131296278</QoS>
+					<QoS-type>java.lang.Integer</QoS-type>
+					<Retain>false</Retain>
+					<Retain-type>java.lang.Boolean</Retain-type>
+					<SSL>false</SSL>
+					<SSL-type>java.lang.Boolean</SSL-type>
+					<Server>server_url</Server>
+					<Server-type>java.lang.String</Server-type>
+					<Topic>light/bedroom/command</Topic>
+					<Topic-type>java.lang.String</Topic-type>
+					<Username>username</Username>
+					<Username-type>java.lang.String</Username-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; light/bedroom/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">net.nosybore.mqttpublishplugin</Str>
+			<Str sr="arg2" ve="3">net.nosybore.mqttpublishplugin.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task6">
+		<cdate>1505482258132</cdate>
+		<edate>1507464339768</edate>
+		<id>6</id>
+		<nme>Mi Band 2 Menu enable</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuItemCount</Str>
+			<Str sr="arg1" ve="3">5</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ConfirmDelay</Str>
+			<Str sr="arg1" ve="3">5000</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%TIMEMS- %MenuEnabledTime</lhs>
+					<op>7</op>
+					<rhs>%ConfirmDelay</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuIndex</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>13</op>
+					<rhs></rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuEnabledTime</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Mi Band 2 Show current menu</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>130</code>
+			<Str sr="arg0" ve="3">Mi Band 2 Action confirm</Str>
+			<Int sr="arg1">
+				<var>%priority</var>
+			</Int>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="0"/>
+		</Action>
+	</Task>
+
+	<Task sr="task7">
+		<cdate>1505482316521</cdate>
+		<edate>1507464123642</edate>
+		<id>7</id>
+		<nme>Mi Band 2 Show current menu</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%MenuEnabledTime</Str>
+			<Str sr="arg1" ve="3">%TIMEMS</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="1"/>
+			<Int sr="arg4" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>37</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>0</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act10" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-22016</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1, HEATING)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1, HEATING)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<missedNotifications>false</missedNotifications>
+					<missedNotifications-type>java.lang.Boolean</missedNotifications-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>9</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>2</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>BANANA</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>-5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act11" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>5</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act12" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-65536</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1,DISCONNECT)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1,DISCONNECT)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>15</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>0</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>&lt;null&gt;</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act13" ve="7">
+			<code>43</code>
+		</Action>
+		<Action sr="act14" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-65536</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1,ERROR)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1,ERROR)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>15</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>0</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>&lt;null&gt;</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act2" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-22016</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1, LIVING LIGHT)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1, LIVING LIGHT)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<missedNotifications>false</missedNotifications>
+					<missedNotifications-type>java.lang.Boolean</missedNotifications-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>9</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>2</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>BANANA</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>-5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act3" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-22016</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1, BEDROOM LIGHT)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1, BEDROOM LIGHT)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<missedNotifications>false</missedNotifications>
+					<missedNotifications-type>java.lang.Boolean</missedNotifications-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>9</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>2</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>BANANA</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>-5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>2</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-22016</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1, LOCK)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1, LOCK)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<missedNotifications>false</missedNotifications>
+					<missedNotifications-type>java.lang.Boolean</missedNotifications-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>9</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>2</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>BANANA</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>-5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>3</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>1197685336</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<color>-22016</color>
+					<color-type>java.lang.Integer</color-type>
+					<colorCount>-2</colorCount>
+					<colorCount-type>java.lang.Integer</colorCount-type>
+					<colorDelay>500</colorDelay>
+					<colorDelay-type>java.lang.Integer</colorDelay-type>
+					<colorLength>2000</colorLength>
+					<colorLength-type>java.lang.Integer</colorLength-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>S(200), VT(2, 1, AC)</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<customPattern>S(200), VT(2, 1, AC)</customPattern>
+					<customPattern-type>java.lang.String</customPattern-type>
+					<missedNotifications>false</missedNotifications>
+					<missedNotifications-type>java.lang.Boolean</missedNotifications-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>vibrationText vibrationTextFilter customPattern</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+					<repeat>false</repeat>
+					<repeat-type>java.lang.Boolean</repeat-type>
+					<repeatColor>true</repeatColor>
+					<repeatColor-type>java.lang.Boolean</repeatColor-type>
+					<repeatCount>5</repeatCount>
+					<repeatCount-type>java.lang.Integer</repeatCount-type>
+					<repeatDelay>10</repeatDelay>
+					<repeatDelay-type>java.lang.Integer</repeatDelay-type>
+					<repeatVibration>true</repeatVibration>
+					<repeatVibration-type>java.lang.Boolean</repeatVibration-type>
+					<vibration>true</vibration>
+					<vibration-type>java.lang.Boolean</vibration-type>
+					<vibrationCount>2</vibrationCount>
+					<vibrationCount-type>java.lang.Integer</vibrationCount-type>
+					<vibrationDelay>200</vibrationDelay>
+					<vibrationDelay-type>java.lang.Integer</vibrationDelay-type>
+					<vibrationIconFirst>9</vibrationIconFirst>
+					<vibrationIconFirst-type>java.lang.Integer</vibrationIconFirst-type>
+					<vibrationIconLast>15</vibrationIconLast>
+					<vibrationIconLast-type>java.lang.Integer</vibrationIconLast-type>
+					<vibrationIconSwapDelay>0</vibrationIconSwapDelay>
+					<vibrationIconSwapDelay-type>java.lang.Integer</vibrationIconSwapDelay-type>
+					<vibrationInitial>false</vibrationInitial>
+					<vibrationInitial-type>java.lang.Boolean</vibrationInitial-type>
+					<vibrationInitialDelay>1500</vibrationInitialDelay>
+					<vibrationInitialDelay-type>java.lang.Integer</vibrationInitialDelay-type>
+					<vibrationLength>500</vibrationLength>
+					<vibrationLength-type>java.lang.Integer</vibrationLength-type>
+					<vibrationMode>2</vibrationMode>
+					<vibrationMode-type>java.lang.Integer</vibrationMode-type>
+					<vibrationNumber>999</vibrationNumber>
+					<vibrationNumber-type>java.lang.String</vibrationNumber-type>
+					<vibrationNumberSmartMode>false</vibrationNumberSmartMode>
+					<vibrationNumberSmartMode-type>java.lang.Boolean</vibrationNumberSmartMode-type>
+					<vibrationNumberSwapDelay>1500</vibrationNumberSwapDelay>
+					<vibrationNumberSwapDelay-type>java.lang.Integer</vibrationNumberSwapDelay-type>
+					<vibrationText>BANANA</vibrationText>
+					<vibrationText-type>java.lang.String</vibrationText-type>
+					<vibrationTextFilter>&lt;null&gt;</vibrationTextFilter>
+					<vibrationTextFilter-type>java.lang.String</vibrationTextFilter-type>
+					<vibrationTextSplit>-5</vibrationTextSplit>
+					<vibrationTextSplit-type>java.lang.Integer</vibrationTextSplit-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">cz.zdenekhorak.mibandtools</Str>
+			<Str sr="arg2" ve="3">cz.zdenekhorak.mibandtools.plugin.PluginActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+		<Action sr="act9" ve="7">
+			<code>43</code>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%MenuIndex</lhs>
+					<op>0</op>
+					<rhs>4</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task8">
+		<cdate>1505252324356</cdate>
+		<edate>1507463807386</edate>
+		<id>8</id>
+		<nme>MQTT Lock toggle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>163134030</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ClientID>Tasker</ClientID>
+					<ClientID-type>java.lang.String</ClientID-type>
+					<Password>password</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Payload>TOGGLE</Payload>
+					<Payload-type>java.lang.String</Payload-type>
+					<Port>1883</Port>
+					<Port-type>java.lang.String</Port-type>
+					<QoS>2131296278</QoS>
+					<QoS-type>java.lang.Integer</QoS-type>
+					<Retain>false</Retain>
+					<Retain-type>java.lang.Boolean</Retain-type>
+					<SSL>false</SSL>
+					<SSL-type>java.lang.Boolean</SSL-type>
+					<Server>server_url</Server>
+					<Server-type>java.lang.String</Server-type>
+					<Topic>lock/command</Topic>
+					<Topic-type>java.lang.String</Topic-type>
+					<Username>username</Username>
+					<Username-type>java.lang.String</Username-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; lock/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">net.nosybore.mqttpublishplugin</Str>
+			<Str sr="arg2" ve="3">net.nosybore.mqttpublishplugin.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+	
+	<Task sr="task9">
+		<cdate>1505292600120</cdate>
+		<edate>1506260250497</edate>
+		<id>9</id>
+		<nme>MQTT Living room light toggle</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>163134030</code>
+			<Bundle sr="arg0">
+				<Vals sr="val">
+					<ClientID>tasker</ClientID>
+					<ClientID-type>java.lang.String</ClientID-type>
+					<Password>password</Password>
+					<Password-type>java.lang.String</Password-type>
+					<Payload>TOGGLE</Payload>
+					<Payload-type>java.lang.String</Payload-type>
+					<Port>1883</Port>
+					<Port-type>java.lang.String</Port-type>
+					<QoS>2131296278</QoS>
+					<QoS-type>java.lang.Integer</QoS-type>
+					<Retain>false</Retain>
+					<Retain-type>java.lang.Boolean</Retain-type>
+					<SSL>false</SSL>
+					<SSL-type>java.lang.Boolean</SSL-type>
+					<Server>server_url</Server>
+					<Server-type>java.lang.String</Server-type>
+					<Topic>light/living/command</Topic>
+					<Topic-type>java.lang.String</Topic-type>
+					<Username>username</Username>
+					<Username-type>java.lang.String</Username-type>
+					<com.twofortyfouram.locale.intent.extra.BLURB>server_url:1883 =&gt; light/living/command QoS:1</com.twofortyfouram.locale.intent.extra.BLURB>
+					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>Topic Payload ClientID Password Username Port Server</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS>
+					<net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>java.lang.String</net.dinglisch.android.tasker.extras.VARIABLE_REPLACE_KEYS-type>
+					<net.dinglisch.android.tasker.subbundled>true</net.dinglisch.android.tasker.subbundled>
+					<net.dinglisch.android.tasker.subbundled-type>java.lang.Boolean</net.dinglisch.android.tasker.subbundled-type>
+				</Vals>
+			</Bundle>
+			<Str sr="arg1" ve="3">net.nosybore.mqttpublishplugin</Str>
+			<Str sr="arg2" ve="3">net.nosybore.mqttpublishplugin.EditActivity</Str>
+			<Int sr="arg3" val="0"/>
+		</Action>
+	</Task>
+</TaskerData>
