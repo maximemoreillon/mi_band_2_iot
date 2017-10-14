@@ -1,6 +1,8 @@
 # Xiaomi Mi Band 2 IoT
 Control IoT devices with a Xiaomi Mi Band 2
 
+[![Alt text](https://img.youtube.com/vi/i9QoAukmoGs/0.jpg)](https://youtu.be/i9QoAukmoGs)
+
 ## Requirements
 
 * MQTT enabled lights, lock, AC, etc...
