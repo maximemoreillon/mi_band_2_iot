@@ -6,6 +6,7 @@ Control IoT devices with a Xiaomi Mi Band 2
 ## Requirements
 
 * MQTT enabled lights, lock, AC, etc...
+* An MQTT broker to connect to
 
 ### Apps
 * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm&hl=fr)
