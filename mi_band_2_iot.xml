@@ -122,6 +122,7 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task12">
 		<cdate>1505483423505</cdate>
 		<edate>1506030264431</edate>
@@ -135,27 +136,7 @@
 			<Int sr="arg2" val="0"/>
 		</Action>
 	</Task>
-
-	<Task sr="task14">
-		<cdate>1505981462250</cdate>
-		<edate>1506031629995</edate>
-		<id>14</id>
-		<nme>Mi Band 2 Connect</nme>
-		<pri>100</pri>
-		<Action sr="act0" ve="7">
-			<code>877</code>
-			<Str sr="arg0" ve="3">mb2fb_connect</Str>
-			<Int sr="arg1" val="0"/>
-			<Str sr="arg2" ve="3"/>
-			<Str sr="arg3" ve="3"/>
-			<Str sr="arg4" ve="3"/>
-			<Str sr="arg5" ve="3"/>
-			<Str sr="arg6" ve="3"/>
-			<Str sr="arg7" ve="3"/>
-			<Str sr="arg8" ve="3"/>
-			<Int sr="arg9" val="0"/>
-		</Action>
-	</Task>
+	
 	<Task sr="task15">
 		<cdate>1505640420828</cdate>
 		<edate>1506031595452</edate>
@@ -176,6 +157,7 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task16">
 		<cdate>1505981772630</cdate>
 		<edate>1506070011541</edate>
@@ -276,6 +258,7 @@
 			<Int sr="arg3" val="10"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task25">
 		<cdate>1507464140078</cdate>
 		<edate>1507464153251</edate>
@@ -318,6 +301,7 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task3">
 		<cdate>1505479395908</cdate>
 		<edate>1507464287777</edate>
@@ -561,6 +545,7 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task6">
 		<cdate>1505482258132</cdate>
 		<edate>1507464339768</edate>
@@ -642,6 +627,7 @@
 			<Int sr="arg5" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task7">
 		<cdate>1505482316521</cdate>
 		<edate>1507464123642</edate>
@@ -1206,6 +1192,7 @@
 			</ConditionList>
 		</Action>
 	</Task>
+	
 	<Task sr="task8">
 		<cdate>1505252324356</cdate>
 		<edate>1507463807386</edate>
@@ -1249,6 +1236,7 @@
 			<Int sr="arg3" val="0"/>
 		</Action>
 	</Task>
+	
 	<Task sr="task9">
 		<cdate>1505292600120</cdate>
 		<edate>1506260250497</edate>
