@@ -8,8 +8,7 @@ For more information: http://maximemoreillon.com/projects/iot/mi_band_2.php
 
 ## Requirements
 
-* MQTT enabled lights, lock, AC, etc...
-* An MQTT broker to connect to
+An MQTT-based home automation setup, including an MQTT broker and MQTT home automation devices such as lights, lock, air conditioner...
 
 ### Apps
 * [Tasker](https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm)
