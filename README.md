@@ -1,7 +1,7 @@
 # Xiaomi Mi Band 2 IoT
 Control IoT devices with a Xiaomi Mi Band 2.
 
-For more information: http://maximemoreillon.com/projects/iot/mi_band_2.php
+Project page: https://cms.maximemoreillon.com/article?id=166
 
 ## Video
 [![Alt text](https://img.youtube.com/vi/i9QoAukmoGs/0.jpg)](https://youtu.be/i9QoAukmoGs)
